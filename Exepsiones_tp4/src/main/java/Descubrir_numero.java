@@ -66,13 +66,13 @@ public class Descubrir_numero {
         if (num < aleatorio) {
             System.out.println("El número secreto es mayor.");
             if (limiteInferior < num) {
-                limiteInferior = num;
+                limiteInferior = num + 1;
             }
 
         } else if (num > aleatorio) {
             System.out.println("El número secreto es menor.");
             if (limiteSuperior > num) {
-                limiteSuperior = num;
+                limiteSuperior = num - 1;
             }
         } else {
             System.out.println("¡Felicitaciones! Adivinaste el número.");
